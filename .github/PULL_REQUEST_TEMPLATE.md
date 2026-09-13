@@ -15,6 +15,7 @@
 - [ ] README/docs updated if behavior or usage changed
 - [ ] `CHANGELOG.md` `[Unreleased]` updated for user-facing changes
 - [ ] No secrets, debug leftovers, or conflict markers
+- [ ] Public repo: no `.env` / live keys / household domains in the diff or history
 - [ ] AI review completed with no blocking findings
 
 ## Verification

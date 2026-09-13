@@ -18,6 +18,17 @@ if git diff --cached --name-only | grep -Eq '(^|/)(\.env|\.env\.local|.*\.pem|.*
   fail=1
 fi
 
+# Public remotes: refuse live-looking keys in staged additions.
+# Mark with `git config hermes.public true`. Private repos skip this.
+# Household-domain checks stay in the skill (AI review), not this script —
+# the script is copied into public repos and must not list private hosts.
+if git config --get hermes.public 2>/dev/null | grep -qi '^true$'; then
+  if git diff --cached | grep -E '^\+.*(ghp_[A-Za-z0-9]|github_pat_)' >/dev/null; then
+    echo "BLOCK: public repo — live-looking keys in staged additions"
+    fail=1
+  fi
+fi
+
 if git diff --cached | grep -nE '^\+.*(TODO|FIXME|debugger|console\.log\()' >/dev/null; then
   echo "WARN: debug/TODO text appears in staged additions"
 fi

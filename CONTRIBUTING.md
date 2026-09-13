@@ -30,6 +30,7 @@ Keep commits focused and reversible. Explain non-obvious or breaking changes in 
 - README/docs updated when behavior or usage changes.
 - `CHANGELOG.md` updated under `[Unreleased]` for user-facing changes.
 - No secrets, production credentials, or private infrastructure in the diff.
+- Public repos: no `.env` / live keys / household domains in the commit or in git history. Private repos are exempt.
 
 ## Release
 
