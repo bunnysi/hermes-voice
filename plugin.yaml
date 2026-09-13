@@ -1,0 +1,31 @@
+name: hermes-voice
+version: 0.2.0
+description: Full-duplex Fish Audio voice calls for Hermes Agent.
+author: hareai
+kind: standalone
+license: MIT
+homepage: https://github.com/hareai/hermes-voice
+tags: [voice, fish, call, duplex]
+manifest_version: 2
+api_version: 1
+platforms:
+  - linux
+  - macos
+provides_tools:
+  - voice_call
+  - voice_status
+  - voice_hangup
+provides_hooks:
+  - on_session_end
+requires_env:
+  - name: FISH_AUDIO_API_KEY
+    description: Fish Audio API key (also accepted as fish.api_key in config.yaml)
+    url: https://fish.audio
+    secret: true
+python_dependencies:
+  - "PyYAML>=6.0,<7"
+config_schema:
+  config_path:
+    type: str
+    default: ""
+    description: Optional path to config.yaml (default ./config.yaml then $HERMES_HOME/hermes-voice.yaml)

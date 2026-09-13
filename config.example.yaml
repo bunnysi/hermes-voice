@@ -1,0 +1,37 @@
+# Copy to config.yaml (gitignored). Do not commit keys.
+# The same keys also work under plugins.entries.hermes-voice.settings
+# in Hermes config.yaml. Environment variables override this file.
+
+fish:
+  # FISH_AUDIO_API_KEY / FISH_API_KEY also accepted.
+  api_key: ""
+  # Optional cloned voice id from Fish Audio.
+  voice_id: ""
+  language: en
+  interruptible: true
+  interruption_sensitivity: high
+  eagerness: balanced
+  # Reuse an existing Fish Agents id after first setup.
+  agent_id: ""
+
+llm:
+  # Must be public https. Fish Agents cannot reach 127.0.0.1.
+  # Point at a reachable OpenAI-compatible Hermes API Server.
+  # LLM_BASE_URL / LLM_API_KEY / LLM_MODEL also accepted.
+  base_url: "https://example.invalid/v1"
+  api_key: ""
+  model: hermes-agent
+
+agent:
+  name: hermes-voice
+  first_message_mode: fixed
+  first_message: "Hello. I'm here. Speak whenever you're ready."
+  system_prompt: >-
+    You are a voice assistant for Hermes. Speak in short spoken sentences.
+    Do not use markdown, lists, or code. Keep replies to one or two sentences.
+    This is a phone call: do not call tools and do not invent work you have not done.
+    If interrupted, stop and wait.
+
+call:
+  host: 127.0.0.1
+  port: 8765
