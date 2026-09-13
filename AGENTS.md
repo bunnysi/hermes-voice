@@ -16,6 +16,7 @@ This file is binding for AI coding agents working in this repository.
 - Do not introduce unrelated cleanup, generated artifacts, secrets, debug code, or dependency churn.
 - Follow the project's existing language, framework, formatting, and token conventions.
 - Do not hardcode machine-local paths or live API keys.
+- This repository is public: do not commit `.env`, live keys, or household/private domains (scan git history, not only HEAD).
 - This plugin is a voice call, not a chat UI and not a tool-heavy agent loop.
 - Do not add a Python LiveKit client, a second transport stack, or group chat.
 

@@ -17,6 +17,8 @@ uv run pytest
 
 `hermes plugins doctor . --ci` when Hermes is installed.
 
+This GitHub repo is public (`git config hermes.public true`). Do not commit `.env`, live keys, or household/private domains. History counts.
+
 ## PR gate
 
 A PR must be focused, documented, tested where behavior changes, reviewed by the AI assistant, and green in CI.
