@@ -2,7 +2,7 @@
 name: hermes-voice
 description: Start a Fish Audio full-duplex call to Hermes.
 version: 0.2.0
-author: hareai
+author: evie
 license: MIT
 metadata:
   hermes:

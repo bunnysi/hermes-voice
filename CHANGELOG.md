@@ -6,6 +6,10 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), versio
 
 ## [Unreleased]
 
+### Changed
+
+- Clone URL, plugin homepage, and author now use `hipness` / `evie`.
+
 ## [0.2.0] - 2026-09-13
 
 ### Added
