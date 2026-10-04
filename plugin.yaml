@@ -1,10 +1,10 @@
 name: hermes-voice
 version: 0.2.0
 description: Full-duplex Fish Audio voice calls for Hermes Agent.
-author: hareai
+author: evie
 kind: standalone
 license: MIT
-homepage: https://github.com/hareai/hermes-voice
+homepage: https://github.com/hipness/hermes-voice
 tags: [voice, fish, call, duplex]
 manifest_version: 2
 api_version: 1

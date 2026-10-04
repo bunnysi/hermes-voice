@@ -5,7 +5,7 @@ description = "Hermes plugin for full-duplex Fish Audio voice calls."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
-authors = [{ name = "hareai" }]
+authors = [{ name = "evie", email = "evie@lilt.me" }]
 dependencies = [
   "PyYAML>=6.0,<7",
 ]
