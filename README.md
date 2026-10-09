@@ -7,7 +7,7 @@ Hermes plugin for full-duplex Fish Audio voice calls.
 ## Quick start
 
 ```bash
-git clone https://github.com/hipness/hermes-voice.git
+git clone https://github.com/bunnysi/hermes-voice.git
 cd hermes-voice
 cp config.example.yaml config.yaml
 # fill fish.api_key, llm.base_url, llm.api_key

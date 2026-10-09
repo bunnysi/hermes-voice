@@ -7,7 +7,7 @@ Hermes 插件：全双工 Fish Audio 语音电话。
 ## 快速开始
 
 ```bash
-git clone https://github.com/hipness/hermes-voice.git
+git clone https://github.com/bunnysi/hermes-voice.git
 cd hermes-voice
 cp config.example.yaml config.yaml
 # 填写 fish.api_key、llm.base_url、llm.api_key
